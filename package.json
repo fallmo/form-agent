@@ -3,13 +3,36 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "npx eslint ./src/**",
+    "lint:fix": "npx eslint ./src/** --fix",
+    "build": "rm -rf dist && tsc",
+    "dev": "tsx src/index",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "@babel/preset-typescript": "^7.27.1",
+    "@eslint/js": "^9.31.0",
+    "@jest/globals": "^30.0.5",
+    "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.13",
+    "babel-jest": "^30.0.5",
+    "eslint": "^9.31.0",
+    "globals": "^16.3.0",
+    "ts-jest": "^29.4.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0"
+  },
   "dependencies": {
+    "jest": "^30.0.5",
+    "joi": "^17.13.3",
     "puppeteer": "^24.15.0"
   }
 }

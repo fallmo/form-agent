@@ -1,0 +1,22 @@
+{
+  "url": "http://localhost:8069/web/database/selector",
+  "fields": [
+    {
+      "selector": "div.o_database_list input[name='master_pwd']",
+      "value": "5h8w-ndnn-44nm"
+    },
+    { "selector": "div.o_database_list input[name='name']", "value": "mydb" },
+    {
+      "selector": "div.o_database_list input[name='login']",
+      "value": "admin@gmail.com"
+    },
+    {
+      "selector": "div.o_database_list input[name='password']",
+      "value": "password"
+    }
+  ],
+  "submitBtnSelector": "div.o_database_list input[type='submit']",
+  "failedElementSelectors": ["div.alert.alert-danger"],
+  "successElementSelectors": ["form.oe_login_form"],
+  "timeoutSeconds": 30
+}
